@@ -1,28 +1,30 @@
 /*Custom CSS styles*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /*Black background*/
-    color: #f00; /*Red text color*/
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #f00; /*Red background for header*/
-    color: #fff; /*White text color*/
+    background-color: rgba(0, 0, 0, 0.7); /*Black background with transparency*/
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 button {
-    background-color: #f00; /*Red button background*/
-    color: #fff; /*White text color*/
+    background-color: #f00;
+    color: #fff;
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
+    border: 1px solid #fff; /*Thin white border around buttons*/
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #000; /*Black background on button hover*/
+    background-color: #000;
 }
