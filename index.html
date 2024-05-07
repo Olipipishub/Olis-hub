@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oli's Hub</title>
-    <link rel="stylesheet" href="olipipi.css">
+    <link rel="stylesheet" href="Untitled-1.css">
+    <script src="blabla.js"></script>
 </head>
 <body>
     <header>
@@ -12,16 +13,18 @@
         <p>What are you feeling today? Maybe some YouTube?</p>
     </header>
 
-    <button onclick="navigateToWebsite('https://www.youtube.com')">Go to YouTube</button>
-    <button onclick="navigateToWebsite('https://www.google.com')">Go to Google</button>
-    <button onclick="navigateToWebsite('https://www.flowgpt.com')">Go to FlowGPT</button>
-    <button onclick="navigateToWebsite('https://www.bing.com/create')">Go to Bing Create</button>
-    <button onclick="navigateToWebsite('https://www.roblox.com')">Go to Roblox</button>
-    <button onclick="navigateToWebsite('https://mail.google.com')">Go to Gmail</button>
-    <button onclick="navigateToWebsite('https://www.amazon.ca')">Go to Amazon Canada</button>
-    <button onclick="navigateToWebsite('https://fmoviesz.to')">Go to Fmoviesz</button>
-    <button onclick="navigateToWebsite('https://www.office.com')">Go to Office.com</button>
+    <button onclick="passwordPrompt()">Enter Password</button>
 
-    <script src="olipipi.js"></script>
+    <div id="buttons" style="display: none;">
+        <button onclick="navigateToWebsite('https://www.youtube.com')">Go to YouTube</button>
+        <button onclick="navigateToWebsite('https://www.google.com')">Go to Google</button>
+        <button onclick="navigateToWebsite('https://www.flowgpt.com')">Go to FlowGPT</button>
+        <button onclick="navigateToWebsite('https://www.bing.com/create')">Go to Bing Create</button>
+        <button onclick="navigateToWebsite('https://www.roblox.com')">Go to Roblox</button>
+        <button onclick="navigateToWebsite('https://mail.google.com')">Go to Gmail</button>
+        <button onclick="navigateToWebsite('https://www.amazon.ca')">Go to Amazon Canada</button>
+        <button onclick="navigateToWebsite('https://fmoviesz.to')">Go to Fmoviesz</button>
+        <button onclick="navigateToWebsite('https://www.office.com')">Go to Office.com</button>
+    </div>
 </body>
 </html>
