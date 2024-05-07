@@ -1,4 +1,4 @@
-/*Custom CSS styles*/
+/* Custom CSS styles */
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://raw.githubusercontent.com/Olipipishub/Olis-hub/main/xq7drehn.png');
@@ -8,22 +8,26 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7); /*Black background with transparency*/
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative; /*Position relative for header*/
+    position: relative; /* Position relative for header */
+    width: 100%;
 }
 
 header::after {
     content: '';
     display: block;
     width: 100%;
-    height: 1.9px; /*Height of the white line*/
-    background-color: #fff; /*White color for the line*/
+    height: 1.9px; /* Height of the white line */
+    background-color: #fff; /* White color for the line */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -33,10 +37,19 @@ button {
     background-color: #f00;
     color: #fff;
     padding: 10px 20px;
-    border: 1px solid #fff; /*Thin white border around buttons*/
+    border: 1px solid #fff; /* Thin white border around buttons */
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #000;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
