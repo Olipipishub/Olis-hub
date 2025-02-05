@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oli's Hub</title>
     <link rel="stylesheet" href="olipipi.css">
-    <script src="olipipi.js"></script>
 </head>
 <body>
     <header>
@@ -15,16 +14,53 @@
 
     <button onclick="passwordPrompt()">Enter Password</button>
 
-    <div id="buttons" style="display: none;">
-        <button onclick="navigateToWebsite('https://www.youtube.com')">Go to YouTube</button>
-        <button onclick="navigateToWebsite('https://www.google.com')">Go to Google</button>
-        <button onclick="navigateToWebsite('https://www.flowgpt.com')">Go to FlowGPT</button>
-        <button onclick="navigateToWebsite('https://www.bing.com/create')">Go to Bing Create</button>
-        <button onclick="navigateToWebsite('https://www.roblox.com')">Go to Roblox</button>
-        <button onclick="navigateToWebsite('https://mail.google.com')">Go to Gmail</button>
-        <button onclick="navigateToWebsite('https://www.amazon.ca')">Go to Amazon Canada</button>
-        <button onclick="navigateToWebsite('https://fmoviesz.to')">Go to Fmoviesz</button>
-        <button onclick="navigateToWebsite('https://www.office.com')">Go to Office.com</button>
+    <div id="buttons" class="fade-in">
+        <!-- Entertainment -->
+        <div class="category">
+            <h2>Entertainment</h2>
+            <div class="category-buttons">
+                <button onclick="navigateToWebsite('https://www.netflix.com')">Netflix</button>
+                <button onclick="navigateToWebsite('https://www.disneyplus.com')">Disney+</button>
+                <button onclick="navigateToWebsite('https://www.cineplex.com')">Cineplex</button>
+                <button onclick="navigateToWebsite('https://www.youtube.com')">YouTube</button>
+                <button onclick="navigateToWebsite('https://fmoviesz.to')">Fmovies</button>
+            </div>
+        </div>
+
+        <!-- School/Work -->
+        <div class="category">
+            <h2>School/Work</h2>
+            <div class="category-buttons">
+                <button onclick="navigateToWebsite('https://www.microsoft.com/en-us/microsoft-teams/group-chat-software')">Teams</button>
+                <button onclick="navigateToWebsite('https://www.office.com')">Office</button>
+                <button onclick="navigateToWebsite('https://mail.google.com')">Gmail</button>
+                <button onclick="navigateToWebsite('https://www.shopify.com')">Shopify</button>
+                <button onclick="navigateToWebsite('https://www.google.com')">Google</button>
+            </div>
+        </div>
+
+        <!-- Social -->
+        <div class="category">
+            <h2>Social</h2>
+            <div class="category-buttons">
+                <button onclick="navigateToWebsite('https://www.snapchat.com')">Snapchat</button>
+                <button onclick="navigateToWebsite('https://www.instagram.com')">Instagram</button>
+                <button onclick="navigateToWebsite('https://www.flowgpt.com')">FlowGPT</button>
+                <button onclick="navigateToWebsite('https://www.bing.com/create')">Bing Create</button>
+            </div>
+        </div>
+
+        <!-- Free Time -->
+        <div class="category">
+            <h2>Free Time</h2>
+            <div class="category-buttons">
+                <button onclick="navigateToWebsite('https://www.roblox.com')">Roblox</button>
+                <button onclick="navigateToWebsite('https://www.amazon.ca')">Amazon Canada</button>
+                <button onclick="navigateToWebsite('https://chat.openai.com')">ChatGPT</button>
+            </div>
+        </div>
     </div>
+
+    <script src="olipipi.js"></script>
 </body>
 </html>
